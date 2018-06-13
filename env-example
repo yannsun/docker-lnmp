@@ -1,7 +1,3 @@
-###########################################################
-###################### General Setup ######################
-###########################################################
-
 ### Paths #################################################
 
 # Point to the path of your applications code on your host
@@ -81,21 +77,11 @@ WORKSPACE_INSTALL_PHPREDIS=true
 WORKSPACE_INSTALL_WORKSPACE_SSH=false
 WORKSPACE_INSTALL_SUBVERSION=false
 WORKSPACE_INSTALL_XDEBUG=false
-WORKSPACE_INSTALL_LDAP=false
-WORKSPACE_INSTALL_SOAP=false
-WORKSPACE_INSTALL_IMAP=false
-WORKSPACE_INSTALL_MONGO=false
-WORKSPACE_INSTALL_AMQP=false
 WORKSPACE_INSTALL_MSSQL=false
 WORKSPACE_INSTALL_DRUSH=false
 WORKSPACE_DRUSH_VERSION=8.1.17
 WORKSPACE_INSTALL_DRUPAL_CONSOLE=false
 WORKSPACE_INSTALL_AEROSPIKE=false
-WORKSPACE_INSTALL_V8JS=false
-WORKSPACE_INSTALL_LARAVEL_ENVOY=false
-WORKSPACE_INSTALL_LARAVEL_INSTALLER=false
-WORKSPACE_INSTALL_DEPLOYER=false
-WORKSPACE_INSTALL_PRESTISSIMO=false
 WORKSPACE_INSTALL_LINUXBREW=false
 WORKSPACE_INSTALL_MC=false
 WORKSPACE_INSTALL_SYMFONY=false
@@ -300,52 +286,6 @@ JENKINS_HOST_HTTP_PORT=8090
 JENKINS_HOST_SLAVE_AGENT_PORT=50000
 JENKINS_HOME=./jenkins/jenkins_home
 
-### GRAFANA ###############################################
-
-GRAFANA_PORT=3000
-
-### BLACKFIRE #############################################
-
-# Create an account on blackfire.io. Don't enable blackfire and xDebug at the same time. # visit https://blackfire.io/docs/24-days/06-installation#install-probe-debian for more info.
-INSTALL_BLACKFIRE=false
-BLACKFIRE_CLIENT_ID=<client_id>
-BLACKFIRE_CLIENT_TOKEN=<client_token>
-BLACKFIRE_SERVER_ID=<server_id>
-BLACKFIRE_SERVER_TOKEN=<server_token>
-
-### AEROSPIKE #############################################
-
-AEROSPIKE_SERVICE_PORT=3000
-AEROSPIKE_FABRIC_PORT=3001
-AEROSPIKE_HEARTBEAT_PORT=3002
-AEROSPIKE_INFO_PORT=3003
-
-## Temp solution, this should be in the dockerfile
-# for all versions "https://github.com/aerospike/aerospike-client-php/archive/master.tar.gz"
-# for php 7.2 (using this branch until the support for 7.2 on master) "https://github.com/aerospike/aerospike-client-php/archive/7.2.0-release-candidate.tar.gz"
-AEROSPIKE_PHP_REPOSITORY=https://github.com/aerospike/aerospike-client-php/archive/7.2.0-release-candidate.tar.gz
-
-### RETHINKDB #############################################
-
-RETHINKDB_PORT=8090
-
-### MONGODB ###############################################
-
-MONGODB_PORT=27017
-
-### CADDY #################################################
-
-CADDY_HOST_HTTP_PORT=80
-CADDY_HOST_HTTPS_PORT=443
-CADDY_HOST_LOG_PATH=./logs/caddy
-CADDY_CUSTOM_CADDYFILE=./caddy/Caddyfile
-
 ### LARAVEL ECHO SERVER ###################################
 
 LARAVEL_ECHO_SERVER_PORT=6001
-
-### SOLR ##################################################
-
-SOLR_VERSION=5.5
-SOLR_PORT=8983
-SOLR_DATAIMPORTHANDLER_MYSQL=false
